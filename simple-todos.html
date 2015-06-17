@@ -7,12 +7,12 @@
   	<header>
   		<h1>Todo List ({{incompleteCount}})</h1>
 
+  		<label class="login">{{> loginButtons}}</label>
+
   		<label class="hide-completed">
   			<input type="checkbox" checked="{{hideCompleted}} /">
   			Hide Completed Tasks
   		</label>
-
-  		{{> loginButtons}}
 
   		{{#if currentUser}}
 	  		<form class="new-task">
